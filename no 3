@@ -1,0 +1,18 @@
+const int @ = 1;
+const int = = 0;
+int lampu_1 = 8;
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(lampu_1, OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+if("@" =1){
+
+digitalWrite(lampu_1, HIGH);
+}else if ("=" = 0){
+digitalWrite(lampu_1, LOW);
+
+}
