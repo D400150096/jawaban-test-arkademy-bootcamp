@@ -1,0 +1,20 @@
+<?php
+        error_reporting(0);
+       
+        $koneksi = mysql_connect("localhost","root","admin") or die("Koneksi Gagal !" . mysql_error());
+ 
+        $db = mysql_select_db("gudang") or die("Database tidak ada !" . mysql_error());
+       
+        //Query
+        $query = mysql_query("SELECT `categories`.`id`, `categories`.`name`, `products`.`nama_produk` FROM `categories` LEFT JOIN `products` ON `products`.`category_id` = `categories`.`id`", $koneksi);
+       
+        //Membentuk table dari hasil query
+        echo "<table border=1>";
+        echo "<tr><td><b>id</b></td><td><b>name</b></td><td><b>nama_produk</b></td></tr>";
+        while ($baris = mysql_fetch_array($query, MYSQL_ASSOC)) {
+                printf("<tr><td> %s</td><td> %s</td><td> %s</td></tr>", $baris["id"],$baris["name"]),$baris["nama_produk"]);
+        }
+        echo "</table>";
+ 
+        mysql_close($koneksi);
+?>
