@@ -1,0 +1,18 @@
+{
+ "BIODATA":{
+ "nama":"ridho surya",
+ "address":"jl.kereta api",
+ "hobbies":"reading"
+ "is_married":"no"
+ "school":"universitas muhammadiyah surakarta"
+ "skills":"program"
+ }
+}
+================================================================= function =======================================================
+$json_object = json_decode($result);
+echo "nama: ". $json_object->nama."<br/>";
+echo "address: ". $json_object->address."<br/>";
+echo "hobbies: ". $json_object->hobbies."<br/>";
+echo "is_married: ". $json_object->is_married."<br/>";
+echo "school: ". $json_object->school."<br/>";
+echo "skills: ". $json_object->skills."<br/>";
