@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Validasi</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<center><h2>LOGIN DOELOE</h2></center>
+	<div class="login">
+			<form onSubmit="alert('submitted.');return false;">
+<div><label>Username:</label></div>
+<input type="text" title="8 character username" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{7,20}$" placeholder="Username" required/>
+<div><label>password:</label></div>
+<input type="password" title="8 character password. use Uppercase, Lowercase and Numeric" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" placeholder="password" required/>
+<input type="submit" value="Login" class="tombol"/>
+</form>
+
+	</div>
+</body>
+<script type="text/javascript">
+	function validasi() {
+		var Username = document.getElementById("Username").value;
+		var password = document.getElementById("password").value;
+		
+		if (Username != "" && Password !="" ) {
+			return true;
+		}else{
+			alert('Anda harus mengisi data dengan lengkap !');
+		}
+	}
+</script>
+</html> 
