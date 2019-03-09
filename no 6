@@ -1,0 +1,12 @@
+[
+{"type":"header","version":"4.7.4","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"gudang"},
+{"type":"table","name":"products","database":"gudang","data":
+[
+{"id":"1","name":"lux"},
+{"id":"2","name":"panci"},
+{"id":"3","name":"sendok"},
+{"id":"4","name":"kunci inggirs"}
+]
+}
+]
