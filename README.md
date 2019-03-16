@@ -8,3 +8,5 @@ https://blog.rosihanari.net/cara-membuat-query-sql-untuk-relasi-tabel/
 https://www.arduino.cc/en/Tutorial/
 
 https://www.dumetschool.com/blog/cara-menampilkan-data-dari-database-dengan-php
+
+https://www.w3schools.com/sql/sql_join_inner.asp
