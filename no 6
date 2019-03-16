@@ -1,3 +1,4 @@
+======================================( A )============================================
 [
 {"type":"header","version":"4.7.4","comment":"Export to JSON plugin for PHPMyAdmin"},
 {"type":"database","name":"gudang"},
@@ -10,3 +11,8 @@
 ]
 }
 ]
+
+=====================================( B )==============================================
+SELECT id.id, name.name, nama_produk.nama_produk
+FROM categories
+INNER JOIN products ON id.nama_produk = nama_produk.nama_produk;
